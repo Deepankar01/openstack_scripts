@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #--------Script for Installing the Prequisits for Installing Openstack-------
 #--------The Script has to run on every node------------
