@@ -6,7 +6,7 @@
 SCRIPT=$(readlink -f "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 export mysql_password=$1
-export rabbitmq_password=$2
+rabbitmq_password=$2
 mysql_ip=$3
 
 #clean up the logs folder
