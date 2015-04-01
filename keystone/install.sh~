@@ -19,9 +19,9 @@ echo -e "\n \n" >> "$SCRIPTPATH/logs/install_log.txt"
 #main commands 
 if(mysql -u root -p$mysql_password -e "CREATE DATABASE keystone" >> "$SCRIPTPATH/logs/install_log.txt") then
 	echo "table.Success" >> "$SCRIPTPATH/logs/install.txt"
-	if(mysql -u root -p$mysql_password -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY '$keystone_password' " >>  "$SCRIPTPATH/logs/install_log.txt") then
+	if(mysql -u root -p$mysql_password -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY '$keystone_password' " >>  "$SCRIPTPATH/logs/install_log.txt")
 		echo "Privillage1.Success" >> "$SCRIPTPATH/logs/install.txt"
-		if (mysql -u root -p$mysql_password -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$keystone_password'" >> "$SCRIPTPATH/logs/install_log.txt") then
+		if (mysql -u root -p$mysql_password -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$keystone_password'" >> "$SCRIPTPATH/logs/install_log.txt")
 			echo "Privillage2.Success" >> "$SCRIPTPATH/logs/install.txt"
 		else
 			echo "Privillage2.Fail" >> "$SCRIPTPATH/logs/install.txt"

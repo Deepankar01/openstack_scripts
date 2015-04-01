@@ -1,6 +1,7 @@
 #!/bin/bash
 #--------Script for Installing the Prequisits for Installing Openstack-------
 #--------The Script has to run on every node------------
+# required.sh (mysql-password,rabbitmq_password,mysql_ip)
 
 #to get the script location
 SCRIPT=$(readlink -f "$0")
