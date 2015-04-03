@@ -20,8 +20,8 @@ date >> "$SCRIPTPATH/logs/required_log.txt"
 echo -e "\n" >> "$SCRIPTPATH/logs/required_log.txt"
 echo -e "\n" >> "$SCRIPTPATH/logs/required_log.txt"
 #adding the passowrd before installation beacuse mysql asks for password on prompt
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password $mysql_password'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password $mysql_password'
+echo mysql-server mysql-server/root_password password $mysql_password | sudo debconf-set-selections
+echo mysql-server mysql-server/root_password_again password $mysql_password | sudo debconf-set-selections
 #installing MySQL
 if (apt-get -y install mysql-server python-mysqldb >> "$SCRIPTPATH/logs/required_log.txt") then
 	echo "MySQLInstall.Success" >> "$SCRIPTPATH/logs/required.txt"
