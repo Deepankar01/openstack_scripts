@@ -1,0 +1,22 @@
+Sat Apr  4 00:29:27 IST 2015
+
+ 
+
+---------------Keystone installation----------------
+Sat Apr  4 00:29:27 IST 2015
+
+ 
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+keystone is already the newest version.
+python-keystoneclient is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 360 not upgraded.
+---------------Keystone Syncing with DB----------------
+Sat Apr  4 00:29:27 IST 2015
+
+ 
+
+keystone stop/waiting
+keystone start/running, process 37685

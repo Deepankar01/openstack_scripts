@@ -1,3 +1,0 @@
-MySQLInstall.Success
-RabbitInstall.Success
-RabbitConfig.Success

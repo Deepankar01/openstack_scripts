@@ -13,7 +13,6 @@ mysql_ip=$3
 #clean up the logs folder
 rm -r $SCRIPTPATH/logs/*
 
-
 #using MySQL as a Database Server
 echo "---------------MySQL Installation----------------" >> "$SCRIPTPATH/logs/required_log.txt"
 date >> "$SCRIPTPATH/logs/required_log.txt"
