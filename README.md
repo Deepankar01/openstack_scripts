@@ -1,4 +1,4 @@
 # openstack_scripts
-Scripts for Installing Openstack on a Distributed Environment
-Currently Supporting 2 node Architecture usign Nova Networking
+Scripts for Installing Openstack on a Distributed Environment compatible with OSIDIS Installer 
+Currently Supporting Nova Networking
 
