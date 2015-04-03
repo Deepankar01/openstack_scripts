@@ -25,7 +25,7 @@ KEYSTONE_CONF="/etc/keystone/keystone.conf"
 rm -f $SCRIPTPATH/logs/install*
 
 #creating database and privillages
-echo "---------------Creating the database and adding privillages----------------" >> $
+echo "---------------Creating the database and adding privillages----------------" >> "$SCRIPTPATH/logs/install_log.txt"
 date >> "$SCRIPTPATH/logs/install_log.txt"
 echo -e "\n \n" >> "$SCRIPTPATH/logs/install_log.txt"
 

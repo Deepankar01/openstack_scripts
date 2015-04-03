@@ -11,7 +11,7 @@ rabbitmq_password=$2
 mysql_ip=$3
 
 #clean up the logs folder
-rm -r $SCRIPTPATH/logs/*
+rm -r $SCRIPTPATH/logs/required*
 
 #using MySQL as a Database Server
 echo "---------------MySQL Installation----------------" >> "$SCRIPTPATH/logs/required_log.txt"
