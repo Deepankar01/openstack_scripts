@@ -21,6 +21,9 @@ VERBOSE_STATUS="true"
 KEYSTONE_CONF="/etc/keystone/keystone.conf"
 
 
+#add the ADMIN_TOKEN to a file for Future usage
+echo $ADMIN_TOKEN > "$SCRIPTPATH/admin_token.txt"
+
 #clean up the logs
 rm -f $SCRIPTPATH/logs/install*
 
