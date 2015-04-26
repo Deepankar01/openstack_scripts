@@ -1,2 +1,3 @@
-#! /bin/bash
-# script to configure the keystone
+#!/bin/bash
+#script to configure the glance
+

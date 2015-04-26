@@ -1,3 +1,3 @@
-#! /bin/bash
+#!/bin/bash
 
-# download cirros from the internet and update it
+#download cirros from the internet and update it to teh database
